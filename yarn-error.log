@@ -1,0 +1,36 @@
+Arguments: 
+  C:\dev\nodejs\node.exe C:\dev\nodejs\node_modules\yarn\bin\yarn.js init
+
+PATH: 
+  C:\Users\DELL\bin;C:\Users\DELL\AppData\Local\Atlassian\SourceTree\git_local\mingw32\bin;C:\Users\DELL\AppData\Local\Atlassian\SourceTree\git_local\usr\local\bin;C:\Users\DELL\AppData\Local\Atlassian\SourceTree\git_local\usr\bin;C:\Users\DELL\AppData\Local\Atlassian\SourceTree\git_local\usr\bin;C:\Users\DELL\AppData\Local\Atlassian\SourceTree\git_local\mingw32\bin;C:\Users\DELL\AppData\Local\Atlassian\SourceTree\git_local\usr\bin;C:\Users\DELL\bin;C:\dev\nvm;C:\dev\nodejs;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;D:\nodejs;D:\work\apache-maven-3.3.9\bin;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Ruby23-x64\bin;C:\Users\DELL\AppData\Roaming\npm;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;C:\Users\DELL\AppData\Local\Atlassian\SourceTree\git_local\usr\bin\vendor_perl;C:\Users\DELL\AppData\Local\Atlassian\SourceTree\git_local\usr\bin\core_perl
+
+Yarn version: 
+  0.21.3
+
+Node version: 
+  4.5.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Can't answer a question unless a user TTY
+      at ConsoleReporter.question (C:\dev\nvm\v4.5.0\node_modules\yarn\lib-legacy\reporters\console\console-reporter.js:211:59)
+      at Object.<anonymous> (C:\dev\nvm\v4.5.0\node_modules\yarn\lib-legacy\cli\commands\init.js:121:38)
+      at next (native)
+      at step (C:\dev\nvm\v4.5.0\node_modules\yarn\node_modules\babel-runtime\helpers\asyncToGenerator.js:17:30)
+      at C:\dev\nvm\v4.5.0\node_modules\yarn\node_modules\babel-runtime\helpers\asyncToGenerator.js:28:13
+      at run (C:\dev\nvm\v4.5.0\node_modules\yarn\node_modules\babel-runtime\node_modules\core-js\library\modules\es6.promise.js:87:22)
+      at C:\dev\nvm\v4.5.0\node_modules\yarn\node_modules\babel-runtime\node_modules\core-js\library\modules\es6.promise.js:100:28
+      at flush (C:\dev\nvm\v4.5.0\node_modules\yarn\node_modules\babel-runtime\node_modules\core-js\library\modules\_microtask.js:18:9)
+      at nextTickCallbackWith0Args (node.js:420:9)
+      at process._tickCallback (node.js:349:13)

@@ -1,0 +1,25 @@
+{
+  "name": "frpgrate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yiczhao/-frpgrate.git"
+  },
+  "keywords": [
+    "fiber"
+  ],
+  "author": "yiczhao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yiczhao/-frpgrate/issues"
+  },
+  "homepage": "https://github.com/yiczhao/-frpgrate#readme",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
