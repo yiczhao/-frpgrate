@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9203c688-0812-430b-a967-5c1deb43db50" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markets/markets-lists.html" afterPath="$PROJECT_DIR$/markets/markets-lists.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markets/markets.html" afterPath="$PROJECT_DIR$/markets/markets.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/gratings.html" afterPath="$PROJECT_DIR$/products/gratings.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/products-lists.html" afterPath="$PROJECT_DIR$/products/products-lists.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/products.html" afterPath="$PROJECT_DIR$/products/products.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/app.css" afterPath="$PROJECT_DIR$/scss/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/app.css.map" afterPath="$PROJECT_DIR$/scss/app.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/views/index.scss" afterPath="$PROJECT_DIR$/scss/views/index.scss" />
     </list>
     <ignored path="frpgrate.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,18 +32,18 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1016">
-                  <caret line="112" column="57" lean-forward="true" selection-start-line="109" selection-start-column="15" selection-end-line="112" selection-end-column="57" />
+                <state relative-caret-position="1135">
+                  <caret line="84" column="10" lean-forward="true" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="products.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="products.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/products/products.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="652">
-                  <caret line="72" column="37" lean-forward="false" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+                <state relative-caret-position="757">
+                  <caret line="77" column="34" lean-forward="true" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
                   <folding />
                 </state>
               </provider>
@@ -78,28 +72,18 @@
           <file leaf-file-name="markets.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/markets/markets.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="693">
-                  <caret line="72" column="38" lean-forward="false" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+                <state relative-caret-position="294">
+                  <caret line="53" column="41" lean-forward="true" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="markets-lists.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="markets-lists.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/markets/markets-lists.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="399">
-                  <caret line="64" column="36" lean-forward="false" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="markets.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scss/views/markets.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="168">
-                  <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+                <state relative-caret-position="273">
+                  <caret line="52" column="68" lean-forward="false" selection-start-line="52" selection-start-column="71" selection-end-line="54" selection-end-column="68" />
                   <folding />
                 </state>
               </provider>
@@ -177,11 +161,21 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="gratings.scss" pinned="false" current-in-tab="true">
+              <file leaf-file-name="gratings.scss" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/scss/views/gratings.scss">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="84">
                       <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="markets.scss" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/scss/views/markets.scss">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="84">
+                      <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
                       <folding />
                     </state>
                   </provider>
@@ -223,11 +217,11 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scss/views/markets.scss" />
         <option value="$PROJECT_DIR$/scss/views/index.scss" />
-        <option value="$PROJECT_DIR$/markets/markets-lists.html" />
         <option value="$PROJECT_DIR$/products/gratings.html" />
-        <option value="$PROJECT_DIR$/markets/markets.html" />
         <option value="$PROJECT_DIR$/products/products-lists.html" />
         <option value="$PROJECT_DIR$/products/products.html" />
+        <option value="$PROJECT_DIR$/markets/markets.html" />
+        <option value="$PROJECT_DIR$/markets/markets-lists.html" />
       </list>
     </option>
   </component>
@@ -455,12 +449,12 @@
       <workItem from="1491350704310" duration="849000" />
       <workItem from="1491562337909" duration="1187000" />
       <workItem from="1491642766424" duration="797000" />
-      <workItem from="1491704453729" duration="14820000" />
+      <workItem from="1491704453729" duration="15055000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17653000" />
+    <option name="totallyTimeSpent" value="17888000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -789,14 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1016">
-          <caret line="112" column="57" lean-forward="true" selection-start-line="109" selection-start-column="15" selection-end-line="112" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/views/home.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -821,14 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/views/markets.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/views/index.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
@@ -839,26 +817,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/markets/markets-lists.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="64" column="36" lean-forward="false" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/products/gratings.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
           <caret line="83" column="38" lean-forward="false" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markets/markets.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="72" column="38" lean-forward="false" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -871,10 +833,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scss/views/markets.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1135">
+          <caret line="84" column="10" lean-forward="true" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/products/products.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="72" column="37" lean-forward="false" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+        <state relative-caret-position="757">
+          <caret line="77" column="34" lean-forward="true" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markets/markets.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="53" column="41" lean-forward="true" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markets/markets-lists.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="52" column="68" lean-forward="false" selection-start-line="52" selection-start-column="71" selection-end-line="54" selection-end-column="68" />
           <folding />
         </state>
       </provider>
