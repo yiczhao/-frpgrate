@@ -28,7 +28,31 @@
 <section class="titles">FIBERGRATE® MOLDED GRATINGS</section>
 <section class="gratings-nav">
     <div class="nav-btn">
-
+        <span @click="step=1" :class="{'active':step===1}">General</span>
+        <span @click="step=2" :class="{'active':step===2}">Product Data</span>
+        <span @click="step=3" :class="{'active':step===3}">Martets</span>
+        <span @click="step=4" :class="{'active':step===4}">Case Studies</span>
+    </div>
+    <div class="nav-lists">
+        <div class="nav-banner">
+            <span class="banner-left"></span>
+            <span class="banner-right"></span>
+            <ul>
+                <li>
+                    <span class="cur"></span>
+                    <span class="cur"></span>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="../img/fiber/frp-red-square-mesh-molded-grating.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="lists1" v-show="step===1">General</div>
+        <div class="lists2" v-show="step===2">Product Data</div>
+        <div class="lists3" v-show="step===3">Martets</div>
+        <div class="lists4" v-show="step===4">Case Studies</div>
     </div>
 </section>
 <section class="about">
@@ -52,11 +76,12 @@
     new Vue({
         el: '#app',
         data: {
+            step:1,
             showNav:false,
             bgImg:'../img/fiber/multi_square_molded.jpg',
             menus:[
-                {name:'产品',link:'products/products.html'},
-                {name:'应用领域',link:'markets/markets.html'},
+                {name:'产品',link:'../products/products.html'},
+                {name:'应用领域',link:'../markets/markets.html'},
                 {name:'技术资料',link:'#',dataClass:''},
                 {name:'联系我们',link:'#',dataClass:'about'},
             ],

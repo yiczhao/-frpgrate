@@ -143,6 +143,28 @@ body.main{
       }
     }
   }
+  .gratings-nav{
+    max-width: 1440px;margin:0 auto;
+    .nav-btn{
+      width: 100%;
+      border-bottom: solid 3px #0098d7;
+      span{
+        display: inline-block;
+        padding: 5px 20px;
+        color: #0098d7;cursor: pointer;font-size: 1.5rem;
+      }
+      .active{
+        background-color: #0098d7;color: #fff;
+      }
+    }
+    .nav-lists{
+      overflow: hidden;padding: 20px;
+      &>div{
+        float:left;
+        margin-right: 20px;
+      }
+    }
+  }
 }
 @media screen and (max-width: 1500px){
   body.main{

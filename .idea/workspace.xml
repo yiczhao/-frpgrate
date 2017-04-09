@@ -2,29 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9203c688-0812-430b-a967-5c1deb43db50" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/markets/markets-lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/markets/markets.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/products/gratings.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/products/products-lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/products/products.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/views/gratings.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/views/home.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/views/index.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/views/markets-list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/views/markets.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/views/products-list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/views/products.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/app.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/app.css.map" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/index.js" afterPath="$PROJECT_DIR$/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/app.scss" afterPath="$PROJECT_DIR$/scss/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/base/neat.scss" afterPath="$PROJECT_DIR$/scss/base/neat.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markets/markets-lists.html" afterPath="$PROJECT_DIR$/markets/markets-lists.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markets/markets.html" afterPath="$PROJECT_DIR$/markets/markets.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/gratings.html" afterPath="$PROJECT_DIR$/products/gratings.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/products-lists.html" afterPath="$PROJECT_DIR$/products/products-lists.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/products.html" afterPath="$PROJECT_DIR$/products/products.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/app.css" afterPath="$PROJECT_DIR$/scss/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/app.css.map" afterPath="$PROJECT_DIR$/scss/app.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/views/index.scss" afterPath="$PROJECT_DIR$/scss/views/index.scss" />
     </list>
     <ignored path="frpgrate.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,11 +45,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="products.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="products.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/products/products.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="694">
-                  <caret line="74" column="57" lean-forward="false" selection-start-line="74" selection-start-column="57" selection-end-line="74" selection-end-column="57" />
+                <state relative-caret-position="652">
+                  <caret line="72" column="37" lean-forward="false" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
                   <folding />
                 </state>
               </provider>
@@ -72,8 +58,8 @@
           <file leaf-file-name="products-lists.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/products/products-lists.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="806">
-                  <caret line="70" column="57" lean-forward="false" selection-start-line="70" selection-start-column="57" selection-end-line="70" selection-end-column="57" />
+                <state relative-caret-position="652">
+                  <caret line="68" column="38" lean-forward="false" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
                   <folding />
                 </state>
               </provider>
@@ -82,8 +68,8 @@
           <file leaf-file-name="gratings.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/products/gratings.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="546">
-                  <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="32" selection-end-column="10" />
+                <state relative-caret-position="672">
+                  <caret line="83" column="38" lean-forward="false" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
                   <folding />
                 </state>
               </provider>
@@ -92,18 +78,18 @@
           <file leaf-file-name="markets.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/markets/markets.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+                <state relative-caret-position="693">
+                  <caret line="72" column="38" lean-forward="false" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="markets-lists.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="markets-lists.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/markets/markets-lists.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="546">
-                  <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+                <state relative-caret-position="399">
+                  <caret line="64" column="36" lean-forward="false" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
@@ -168,8 +154,8 @@
               <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/scss/views/index.scss">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="441">
-                      <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="16" />
+                    <state relative-caret-position="490">
+                      <caret line="160" column="36" lean-forward="false" selection-start-line="160" selection-start-column="36" selection-end-line="160" selection-end-column="36" />
                       <folding>
                         <element signature="e#1345#2407#0" expanded="false" />
                       </folding>
@@ -226,7 +212,6 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/scss/base/neat.scss" />
         <option value="$PROJECT_DIR$/js/index.js" />
-        <option value="$PROJECT_DIR$/scss/views/index.scss" />
         <option value="$PROJECT_DIR$/scss/app.scss" />
         <option value="$PROJECT_DIR$/scss/views/products.scss" />
         <option value="$PROJECT_DIR$/scss/views/home.scss" />
@@ -236,12 +221,13 @@
         <option value="$PROJECT_DIR$/scss/views/gratings.scss" />
         <option value="$PROJECT_DIR$/views/gratings.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/products/products.html" />
-        <option value="$PROJECT_DIR$/products/products-lists.html" />
+        <option value="$PROJECT_DIR$/scss/views/markets.scss" />
+        <option value="$PROJECT_DIR$/scss/views/index.scss" />
+        <option value="$PROJECT_DIR$/markets/markets-lists.html" />
         <option value="$PROJECT_DIR$/products/gratings.html" />
         <option value="$PROJECT_DIR$/markets/markets.html" />
-        <option value="$PROJECT_DIR$/scss/views/markets.scss" />
-        <option value="$PROJECT_DIR$/markets/markets-lists.html" />
+        <option value="$PROJECT_DIR$/products/products-lists.html" />
+        <option value="$PROJECT_DIR$/products/products.html" />
       </list>
     </option>
   </component>
@@ -335,20 +321,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="products" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frpgrate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frpgrate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="markets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -364,6 +336,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frpgrate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frpgrate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fiber" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -465,12 +455,12 @@
       <workItem from="1491350704310" duration="849000" />
       <workItem from="1491562337909" duration="1187000" />
       <workItem from="1491642766424" duration="797000" />
-      <workItem from="1491704453729" duration="13209000" />
+      <workItem from="1491704453729" duration="14820000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16042000" />
+    <option name="totallyTimeSpent" value="17653000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -482,7 +472,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2572" height="1452" extended-state="1" />
+    <frame x="-8" y="-8" width="2572" height="1452" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.078531966" sideWeight="0.4960707" order="2" side_tool="false" content_ui="combo" />
@@ -807,14 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/products/products.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="74" column="57" lean-forward="false" selection-start-line="74" selection-start-column="57" selection-end-line="74" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/views/home.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -827,14 +809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/products/products-lists.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="70" column="57" lean-forward="false" selection-start-line="70" selection-start-column="57" selection-end-line="70" selection-end-column="57" />
           <folding />
         </state>
       </provider>
@@ -855,37 +829,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scss/views/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="160" column="36" lean-forward="false" selection-start-line="160" selection-start-column="36" selection-end-line="160" selection-end-column="36" />
+          <folding>
+            <element signature="e#1345#2407#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markets/markets-lists.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="64" column="36" lean-forward="false" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/products/gratings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="32" selection-end-column="10" />
+        <state relative-caret-position="672">
+          <caret line="83" column="38" lean-forward="false" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/markets/markets.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        <state relative-caret-position="693">
+          <caret line="72" column="38" lean-forward="false" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/markets/markets-lists.html">
+    <entry file="file://$PROJECT_DIR$/products/products-lists.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+        <state relative-caret-position="652">
+          <caret line="68" column="38" lean-forward="false" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/views/index.scss">
+    <entry file="file://$PROJECT_DIR$/products/products.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="16" />
-          <folding>
-            <element signature="e#1345#2407#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="652">
+          <caret line="72" column="37" lean-forward="false" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>

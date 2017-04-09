@@ -1405,6 +1405,27 @@ body.main {
           padding: 0 30px;
           min-height: 100px;
           box-sizing: border-box; }
+  body.main .gratings-nav {
+    max-width: 1440px;
+    margin: 0 auto; }
+    body.main .gratings-nav .nav-btn {
+      width: 100%;
+      border-bottom: solid 3px #0098d7; }
+      body.main .gratings-nav .nav-btn span {
+        display: inline-block;
+        padding: 5px 20px;
+        color: #0098d7;
+        cursor: pointer;
+        font-size: 1.5rem; }
+      body.main .gratings-nav .nav-btn .active {
+        background-color: #0098d7;
+        color: #fff; }
+    body.main .gratings-nav .nav-lists {
+      overflow: hidden;
+      padding: 20px; }
+      body.main .gratings-nav .nav-lists > div {
+        float: left;
+        margin-right: 20px; }
 
 @media screen and (max-width: 1500px) {
   body.main header .header-nav ul li {
