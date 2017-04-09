@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/yiczhao/-frpgrate#readme",
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "vue": "1.0.21"
   }
 }

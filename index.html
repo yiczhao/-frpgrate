@@ -6,10 +6,113 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
+    <link rel="stylesheet" href="./scss/app.css">
+    <link rel="stylesheet" href="./scss/app.css">
+    <link rel="stylesheet" href="./scss/views/home.css">
 </head>
-<body>
-
+<body id="app" class="main">
+<header>
+    <a class="header-logo" href="index.html">
+        logo位
+    </a>
+    <nav class="header-nav">
+        <span class="daohang" @click="showNav=!showNav">导航</span>
+        <ul :class="{'show-nav':showNav}">
+            <li v-for="i in menus" :data-class="i.dataClass"><a :href="i.link" v-text="i.name"></a></li>
+            <li>
+                <a href="#">中文</a>
+                <a href="#" class="no-active">En</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<section class="content"><div class="banner"></div></section>
+<section class="join">
+    <div>
+        <h2>WHY CHOOSE FIBERGLASS REINFORCED PLASTIC (FRP) INSTEAD OF STEEL?</h2>
+        <h4>Contractors and architects prefer FRP over metal, wood and concrete for many industrial and construction applications. The benefits of building with FRP:</h4>
+        <ul>
+            <li>FRP is 70% lighter than steel with an exceptional strength-to-weight ratio.</li>
+            <li>FRP is corrosion resistant and requires less maintenance than traditional metal, wood and concrete products.</li>
+            <li>FRP is non-conductive and slip resistant, providing a safer alternative to steel and concrete.</li>
+            <li>We manufacture and fabricate FRP in a range of colors and shapes, giving architects options for creating compelling structures.</li>
+        </ul>
+    </div>
+</section>
+<section class="floor">
+    <div class="floor-main">
+        <!--<div class="floor-title"></div>-->
+        <!--<span class="btn btn-left"></span>-->
+        <!--<span class="btn btn-right"></span>-->
+        <ul class="floor-lists">
+            <li>
+                <a href="" target="_blank">
+                    <img alt="" src="./img/fiber/worldwide.png">
+                    <p>Who is Fibergrate?</p>
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank">
+                    <img alt="" src="./img/fiber/slip-resistant.png">
+                    <p>FRP Benefits</p>
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank">
+                    <img alt="" src="./img/fiber/protractor.png">
+                    <p>Design Resources</p>
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank">
+                    <img alt="" src="./img/fiber/grating.png">
+                    <p>Our Products</p>
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank">
+                    <img alt="" src="./img/fiber/videos.png">
+                    <p>Videos</p>
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank">
+                    <img alt="" src="./img/fiber/camera.png">
+                    <p>Case Studies</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="about">
+    <div>
+        <div class="bg"></div>
+        <h1>联系我们</h1>
+        <p>
+            联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们，
+            联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们，
+            联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们，
+            联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们，
+            联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们。
+        </p>
+    </div>
+</section>
 </body>
-<script src="js/jquery.min.js"></script>
-<script src="js/index.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/vue.min.js"></script>
+<script src="./js/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            showNav:false,
+            menus:[
+                {name:'产品',link:'products/products.html'},
+                {name:'应用领域',link:'markets/markets.html'},
+                {name:'技术资料',link:'#',dataClass:''},
+                {name:'联系我们',link:'#',dataClass:'about'},
+            ]
+        }
+    })
+</script>
 </html>

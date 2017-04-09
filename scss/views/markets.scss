@@ -1,0 +1,57 @@
+body.main{
+  .content{
+    position: relative;
+    .banner{
+      height: 410px;width: 100%;
+      background: url('../../img/fiber/frp-molded-grating-case-studies.jpg');background-size: cover;
+    }
+  }
+  .titles{
+    max-width: 1440px;  margin: 0 auto;
+    text-transform: uppercase;  color: #0063a5;  font-size: 3em;  font-weight: 300;
+  }
+  .products{
+    max-width: 1440px;  margin: 0 auto;
+    overflow: hidden;
+    .products-lists{
+      width: 50%; float: left;
+      &>div{
+        margin:20px 0;padding: 0 5px;
+        overflow: hidden;
+        img,div{
+          float: left;
+        }
+        img{
+          margin-right: 20px;width: 360px;
+        }
+        div{
+          span,a{
+            display: block;  display: -webkit-box;word-break: break-all; -webkit-box-orient: vertical;overflow: hidden;
+            max-width:320px;-webkit-line-clamp: 5;
+          }
+          span:first-child{
+            padding: 20px 0;
+            color: #00a2d7;font-weight: bolder;font-size: 1.5rem;
+          }
+          a{
+            width: 120px;  height: 28px;margin-top: 25px;
+            background-color: #0098d7;  color: #FFF;text-align: center;border-radius: 10px;line-height: 28px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1500px){
+  body.main .products .products-lists > div div span, body.main .products .products-lists > div div a{
+    max-width:220px;
+  }
+}
+@media screen and (max-width: 1280px){
+  body.main .products .products-lists > div div span, body.main .products .products-lists > div div a{
+    max-width:200px;
+  }
+  body.main .products .products-lists > div img {
+    width: 295px;
+  }
+}

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="../scss/app.css">
+    <link rel="stylesheet" href="../scss/views/markets-list.css">
+</head>
+<body id="app" class="main">
+<header>
+    <a class="header-logo" href="../index.html">
+        logo位
+    </a>
+    <nav class="header-nav">
+        <span class="daohang" @click="showNav=!showNav">导航</span>
+        <ul :class="{'show-nav':showNav}">
+            <li v-for="i in menus" :data-class="i.dataClass"><a :href="i.link" v-text="i.name"></a></li>
+            <li>
+                <a href="#">中文</a>
+                <a href="#" class="no-active">En</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<section class="titles">FIBERGRATE® MOLDED GRATINGS</section>
+<section class="gratings-nav">
+    <div class="nav-btn">
+
+    </div>
+</section>
+<section class="about">
+    <div>
+        <div class="bg"></div>
+        <h1>联系我们</h1>
+        <p>
+            联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们，
+            联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们，
+            联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们，
+            联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们，
+            联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们。
+        </p>
+    </div>
+</section>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/vue.min.js"></script>
+<script src="../js/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            showNav:false,
+            bgImg:'../img/fiber/multi_square_molded.jpg',
+            menus:[
+                {name:'产品',link:'products/products.html'},
+                {name:'应用领域',link:'markets/markets.html'},
+                {name:'技术资料',link:'#',dataClass:''},
+                {name:'联系我们',link:'#',dataClass:'about'},
+            ],
+            productsLists:[{
+                imgSrc:'../img/fiber/molded-grating-mix.gif',
+                proName:'产品名称',
+                proDes:'产品产品说明产品说明产产品说明产产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明说明产品说明产产品说明产产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明',
+                proUri:'./gratings.html'
+            },{
+                imgSrc:'../img/fiber/molded-grating-mix.gif',
+                proName:'产品名称',
+                proDes:'产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明',
+                proUri:'#'
+            },{
+                imgSrc:'../img/fiber/molded-grating-mix.gif',
+                proName:'产品名称',
+                proDes:'产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明',
+                proUri:'#'
+            }]
+        }
+    })
+</script>
+</html>

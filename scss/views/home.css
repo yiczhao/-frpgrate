@@ -1,0 +1,10 @@
+body.main .content {
+  position: relative; }
+  body.main .content .banner {
+    height: 300px;
+    width: 100%;
+    background: url("../../img/fiber/frp-banner.jpg") no-repeat;
+    background-size: contain;
+    background-attachment: fixed; }
+
+/*# sourceMappingURL=home.css.map */
