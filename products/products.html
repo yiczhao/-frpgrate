@@ -90,6 +90,24 @@
                 proDes:'产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明',
                 proUri:'./products-lists.html'
             }]
+        },
+        methods:{
+            getlist(){
+                var vm=this;
+                $.ajax({
+                    type:'get',
+                    data:this.searchData,
+                    url:'http://47.93.51.158/jfinal_cms/api/action/pageArticle?version=1.0.1&pageNo=1&pageSize=1&folderId=257',
+                    success:function(res){
+                        if(res.code===0){
+                            console.log(res.data.list)
+                        }
+                    }
+                })
+            },
+        },
+        ready(){
+            this.getlist();
         }
     })
 </script>
