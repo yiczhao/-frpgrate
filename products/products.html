@@ -37,11 +37,11 @@
 <section class="products">
     <div class="products-lists" v-for="n in productsLists">
         <div>
-            <img :src="n.imgSrc" alt="">
+            <img :src="origin+n.image_url" alt="">
             <div>
-                <span>{{n.proName}}</span>
-                <span>{{n.proDes}}</span>
-                <a class="top-tilte" :href="n.proUri">详情</a>
+                <span>{{n.title}}</span>
+                <span>{{{n.content}}}</span>
+                <a class="top-tilte" :href="n.jump_url">详情</a>
             </div>
         </div>
     </div>
@@ -67,28 +67,11 @@
     new Vue({
         el: '#app',
         data: {
+            origin:'http://47.93.51.158/jfinal_cms/',
             showNav:false,
             menus:[
-                {name:'产品',link:'../products/products.html'},
-                {name:'应用领域',link:'../markets/markets.html'},
-                {name:'技术资料',link:'#',dataClass:''},
-                {name:'联系我们',link:'#',dataClass:'about'},
             ],
             productsLists:[{
-                imgSrc:'../img/fiber/molded-grating-mix.gif',
-                proName:'产品名称',
-                proDes:'产品产品说明产品说明产产品说明产产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明说明产品说明产产品说明产产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明',
-                proUri:'./products-lists.html'
-            },{
-                imgSrc:'../img/fiber/molded-grating-mix.gif',
-                proName:'产品名称',
-                proDes:'产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明',
-                proUri:'./products-lists.html'
-            },{
-                imgSrc:'../img/fiber/molded-grating-mix.gif',
-                proName:'产品名称',
-                proDes:'产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明',
-                proUri:'./products-lists.html'
             }]
         },
         methods:{
@@ -97,7 +80,18 @@
                 $.ajax({
                     type:'get',
                     data:this.searchData,
-                    url:'http://47.93.51.158/jfinal_cms/api/action/pageArticle?version=1.0.1&pageNo=1&pageSize=1&folderId=257',
+                    url:vm.origin+'api/action/pageArticle?version=1.0.1&pageNo=1&pageSize=10&folderId=257',
+                    success:function(res){
+                        if(res.code===0){
+                            vm.$set('productsLists',res.data.list);
+                            console.log(res.data.list)
+                        }
+                    }
+                })
+                $.ajax({
+                    type:'get',
+                    data:this.searchData,
+                    url:vm.origin+'api/action/pageArticle?version=1.0.1&pageNo=1&pageSize=10&folderId=4255',
                     success:function(res){
                         if(res.code===0){
                             console.log(res.data.list)
