@@ -12,10 +12,7 @@ body.main{
     }
     .header-logo{
       width: 20%;
-      line-height: 120px;text-align: center;
-      img{
-        vertical-align: middle;
-      }
+      line-height: 120px;text-align: center; background:url('../img/logo.jpg') no-repeat center center;
     }
     .header-nav{
       width: 80%;

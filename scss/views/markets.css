@@ -27,7 +27,8 @@ body.main .products {
         float: left; }
       body.main .products .products-lists > div img {
         margin-right: 20px;
-        width: 360px; }
+        width: 360px;
+        max-height: 270px; }
       body.main .products .products-lists > div div span, body.main .products .products-lists > div div a {
         display: block;
         display: -webkit-box;

@@ -21,6 +21,7 @@
   "homepage": "https://github.com/yiczhao/-frpgrate#readme",
   "dependencies": {
     "jquery": "^3.2.1",
+    "requirejs": "^2.3.3",
     "vue": "1.0.21"
   }
 }

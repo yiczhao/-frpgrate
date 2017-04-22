@@ -10,20 +10,8 @@
     <link rel="stylesheet" href="../scss/views/products.css">
 </head>
 <body id="app" class="main">
-<header>
-    <a class="header-logo" href="../index.html">
-        logo位
-    </a>
-    <nav class="header-nav">
-        <span class="daohang" @click="showNav=!showNav">导航</span>
-        <ul :class="{'show-nav':showNav}">
-            <li v-for="i in menus" :data-class="i.dataClass"><a :href="i.link" v-text="i.name"></a></li>
-            <li>
-                <a href="#">中文</a>
-                <a href="#" class="no-active">En</a>
-            </li>
-        </ul>
-    </nav>
+<header id="header">
+    <f-header></f-header>
 </header>
 <section class="content"><div class="banner"></div></section>
 <section class="join">
@@ -46,63 +34,42 @@
         </div>
     </div>
 </section>
-<section class="about">
-    <div>
-        <div class="bg"></div>
-        <h1>联系我们</h1>
-        <p>
-            联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们，
-            联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们，
-            联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们，
-            联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们，
-            联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们。
-        </p>
-    </div>
+<section id="footer" class="about">
+    <f-footer></f-footer>
 </section>
 </body>
 <script src="../js/jquery.min.js"></script>
-<script src="../js/vue.min.js"></script>
+<script src="../js/require.js" data-main="../config.js"></script>
 <script src="../js/index.js"></script>
 <script>
-    new Vue({
-        el: '#app',
-        data: {
-            origin:'http://47.93.51.158/jfinal_cms/',
-            showNav:false,
-            menus:[
-            ],
-            productsLists:[{
-            }]
-        },
-        methods:{
-            getlist(){
-                var vm=this;
-                $.ajax({
-                    type:'get',
-                    data:this.searchData,
-                    url:vm.origin+'api/action/pageArticle?version=1.0.1&pageNo=1&pageSize=10&folderId=257',
-                    success:function(res){
-                        if(res.code===0){
-                            vm.$set('productsLists',res.data.list);
-                            console.log(res.data.list)
-                        }
-                    }
-                })
-                $.ajax({
-                    type:'get',
-                    data:this.searchData,
-                    url:vm.origin+'api/action/pageArticle?version=1.0.1&pageNo=1&pageSize=10&folderId=4255',
-                    success:function(res){
-                        if(res.code===0){
-                            console.log(res.data.list)
-                        }
-                    }
-                })
+    function initHtml(Vue){
+        new Vue({
+            el: '#app',
+            data: {
+                origin:window.origin,
+                productsLists:[{
+                }]
             },
-        },
-        ready(){
-            this.getlist();
-        }
-    })
+            methods:{
+                getlist(){
+                    var vm=this;
+                    $.ajax({
+                        type:'get',
+                        data:this.searchData,
+                        url:origin+'api/action/pageArticle?version=1.0.1&pageNo=1&pageSize=10&folderId=257',
+                        success:function(res){
+                            if(res.code===0){
+                                vm.$set('productsLists',res.data.list);
+                                console.log(res.data.list)
+                            }
+                        }
+                    })
+                },
+            },
+            ready(){
+                this.getlist();
+            }
+        })
+    }
 </script>
 </html>

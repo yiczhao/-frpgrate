@@ -1,0 +1,19 @@
+require.config({
+    baseUrl:'http://localhost:63342/frpgrate/',
+    shim:{
+        'vue':{
+            exports:'vue'
+        }
+    },
+    paths:{
+        'vue':'lib/vue',
+        'header':'vue-module/f-header',
+        'footer':'vue-module/f-footer'
+    },
+});
+window.origin='http://47.93.51.158/jfinal_cms/';
+require(['vue','header','footer'],function(Vue,header,footer){
+    if(typeof initHtml ==='function'){
+        initHtml(Vue);
+    }
+});

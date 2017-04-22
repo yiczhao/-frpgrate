@@ -7,35 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
     <link rel="stylesheet" href="./scss/app.css">
-    <link rel="stylesheet" href="./scss/app.css">
     <link rel="stylesheet" href="./scss/views/home.css">
 </head>
 <body id="app" class="main">
-<header>
-    <a class="header-logo" href="index.html">
-        logo位
-    </a>
-    <nav class="header-nav">
-        <span class="daohang" @click="showNav=!showNav">导航</span>
-        <ul :class="{'show-nav':showNav}">
-            <li v-for="i in menus"
-                v-if="!i.parent_id"
-                :data-id="i.id"
-                :data-class="i.key"
-                :class="{'hover':navId===i.id}"
-                v-on:mouseenter="showChild(i.id)"
-            >
-                <a :href="i.path" v-text="i.name"></a>
-            </li>
-            <li>
-                <a href="#">中文</a>
-                <a href="#" class="no-active">En</a>
-            </li>
-        </ul>
-        <div class="children-nav" v-on:mouseleave="hideNav" v-show="!!navId">
-            <a v-if="j.parent_id===navId" v-for="j in menus" v-if="!!j.parent_id" :href="j.path" v-text="j.name"></a>
-        </div>
-    </nav>
+<header id="header">
+    <f-header></f-header>
 </header>
 <section class="content"><div class="banner"></div></section>
 <section class="join">
@@ -57,37 +33,37 @@
         <!--<span class="btn btn-right"></span>-->
         <ul class="floor-lists">
             <li>
-                <a href="" target="_blank">
+                <a href="">
                     <img alt="" src="./img/fiber/worldwide.png">
                     <p>Who is Fibergrate?</p>
                 </a>
             </li>
             <li>
-                <a href="" target="_blank">
+                <a href="">
                     <img alt="" src="./img/fiber/slip-resistant.png">
                     <p>FRP Benefits</p>
                 </a>
             </li>
             <li>
-                <a href="" target="_blank">
+                <a href="">
                     <img alt="" src="./img/fiber/protractor.png">
                     <p>Design Resources</p>
                 </a>
             </li>
             <li>
-                <a href="" target="_blank">
+                <a href="">
                     <img alt="" src="./img/fiber/grating.png">
                     <p>Our Products</p>
                 </a>
             </li>
             <li>
-                <a href="" target="_blank">
+                <a href="">
                     <img alt="" src="./img/fiber/videos.png">
                     <p>Videos</p>
                 </a>
             </li>
             <li>
-                <a href="" target="_blank">
+                <a href="">
                     <img alt="" src="./img/fiber/camera.png">
                     <p>Case Studies</p>
                 </a>
@@ -95,72 +71,11 @@
         </ul>
     </div>
 </section>
-<section class="about">
-    <div>
-        <div class="bg"></div>
-        <h1>联系我们</h1>
-        <p>
-            联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们，
-            联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们，
-            联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们，
-            联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们，
-            联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们。
-            <img src="img/fiber/frp-molded-grating-case-studies.jpg"/></p>
-    </div>
+<section id="footer" class="about">
+    <f-footer></f-footer>
 </section>
 </body>
 <script src="./js/jquery.min.js"></script>
-<script src="./js/vue.min.js"></script>
+<script src="./js/require.js" data-main="config.js"></script>
 <script src="./js/index.js"></script>
-<script>
-    var origin='http://47.93.51.158/jfinal_cms';
-    new Vue({
-        el: '#app',
-        data: {
-            searchData:{
-                siteId:9,
-                version:'1.0.0',
-                method:'folders'
-            },
-            showNav:false,
-            menus:[
-                {name:'产品',link:'products/products.html'},
-                {name:'应用领域',link:'markets/markets.html'},
-                {name:'技术资料',link:'#',dataClass:''},
-                {name:'联系我们',link:'#',dataClass:'about'},
-            ],
-            navId:''
-        },
-        methods:{
-            getlist(){
-                var vm=this;
-                $.ajax({
-                    type:'get',
-                    data:this.searchData,
-                    url:origin+'/api/action/folders',
-                    success:function(res){
-                        if(res.code===0){
-                            vm.$set('menus',res.data.list)
-                        }
-                    }
-                })
-            },
-            showChild(id){
-                this.navId=id;
-                this.$nextTick(function(){
-                    if(!$.trim($('.children-nav').html())){
-                        this.navId='';
-                    }
-                })
-                console.log();
-            },
-            hideNav(){
-                this.navId='';
-            }
-        },
-        ready(){
-            this.getlist();
-        }
-    })
-</script>
 </html>
