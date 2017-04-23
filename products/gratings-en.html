@@ -16,8 +16,8 @@
 <section class="titles">FIBERGRATE® MOLDED GRATINGS</section>
 <section class="gratings-nav">
     <div class="nav-btn">
-        <span @click="step=1" :class="{'active':step===1}">产品详情</span>
-        <span @click="step=2" :class="{'active':step===2}">PDF下载</span>
+        <span v-if="!!productsLists.content" @click="step=1" :class="{'active':step===1}">产品详情</span>
+        <span v-if="!!productsLists.file_url" @click="step=2" :class="{'active':step===2}">PDF下载</span>
         <span v-if="!!productsLists.file_url1" @click="step=3" :class="{'active':step===3}">Martets</span>
         <span v-if="!!productsLists.file_url2" @click="step=4" :class="{'active':step===4}">Case Studies</span>
     </div>
