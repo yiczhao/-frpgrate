@@ -15,7 +15,8 @@ define(['vue'], function(Vue) {
     :class="{'hover':navId===i.id}"
     v-on:mouseenter="showChild(i.id)"
         >
-        <a :href="i.jump_url" v-text="i.name"></a>
+        <a v-if="!!i.jump_url" :href="i.jump_url+'?id='+i.id" v-text="i.name"></a>
+        <a v-else v-text="i.name"></a>
         </li>
         <li>
         <a href="#">中文</a>
@@ -23,7 +24,7 @@ define(['vue'], function(Vue) {
         </li>
         </ul>
         <div class="children-nav" v-on:mouseleave="hideNav" v-show="!!navId">
-        <a v-for="j in menus" v-if="j.parent_id===navId" v-if="!!j.parent_id" :href="j.jump_url" v-text="j.name"></a>
+        <a v-for="j in menus" v-if="j.parent_id===navId" v-if="!!j.parent_id" :href="j.jump_url+'?id='+j.id" v-text="j.name"></a>
         </div>
         </nav>`,
         data: function() {
@@ -47,7 +48,8 @@ define(['vue'], function(Vue) {
                     url:origin+'/api/action/folders',
                     success:function(res){
                         if(res.code===0){
-                            vm.$set('menus',res.data.list)
+                            vm.$set('menus',res.data.list);
+                            sessionStorage.setItem('menu',JSON.stringify(res.data.list))
                         }
                     }
                 })

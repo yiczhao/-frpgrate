@@ -23,13 +23,13 @@
     </div>
 </section>
 <section class="products">
-    <div class="products-lists" v-for="n in productsLists">
+    <div class="products-lists" v-for="n in productsLists" v-if="n.parent_id===258">
         <div>
             <img :src="origin+n.image_url" alt="">
             <div>
-                <span>{{n.title}}</span>
+                <span>{{n.name}}</span>
                 <span>{{{n.content}}}</span>
-                <a class="top-tilte" :href="n.jump_url">详情</a>
+                <a class="top-tilte" :href="n.jump_url+'?id='+n.id">详情</a>
             </div>
         </div>
     </div>
@@ -51,22 +51,9 @@
                 }]
             },
             methods:{
-                getlist(){
-                    var vm=this;
-                    $.ajax({
-                        type:'get',
-                        data:this.searchData,
-                        url:origin+'api/action/pageArticle?version=1.0.1&pageNo=1&pageSize=100&folderId=258',
-                        success:function(res){
-                            if(res.code===0){
-                                vm.$set('productsLists',res.data.list);
-                            }
-                        }
-                    })
-                },
             },
             ready(){
-                this.getlist();
+                this.$set('productsLists',JSON.parse(sessionStorage.getItem('menu')));
             }
         })
     }

@@ -12,6 +12,11 @@ function scroll(height){
 function floor(_ul,_width){
     _ul.stop().animate({'left':_width},200)
 }
+function GetQueryString(name) {
+    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if(r!=null)return  unescape(r[2]); return null;
+}
 $(document).on('click','.header-nav li',function(){
     var _class=$(this).data('class');
     if(!!_class){

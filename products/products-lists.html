@@ -49,10 +49,11 @@
             methods:{
                 getlist(){
                     var vm=this;
+                    var _id=GetQueryString('id');
                     $.ajax({
                         type:'get',
                         data:this.searchData,
-                        url:origin+'api/action/pageArticle?version=1.0.1&pageNo=1&pageSize=10&folderId=268',
+                        url:origin+'api/action/pageArticle?version=1.0.1&pageNo=1&pageSize=10&folderId='+_id,
                         success:function(res){
                             if(res.code===0){
                                 vm.$set('productsLists',res.data.list);
