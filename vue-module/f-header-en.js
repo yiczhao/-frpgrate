@@ -15,7 +15,7 @@ define(['vue'], function(Vue) {
     :class="{'hover':navId===i.id}"
     v-on:mouseenter="showChild(i.id)"
         >
-        <a v-if="!!i.jump_url" :href="i.jump_url+'?id='+i.id" v-text="i.name"></a>
+        <a v-if="!!i.jump_url" :href="i.jump_url+'?id='+i.id+'&name='+i.name" v-text="i.name"></a>
         <a v-else v-text="i.name"></a>
         </li>
         <li>
