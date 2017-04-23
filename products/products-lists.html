@@ -16,7 +16,7 @@
 <section class="content">
     <div class="banner" :style="'background-image: url('+bgImg+')'"></div>
 </section>
-<section class="titles">XX产品</section>
+<section class="titles">{{productName}}</section>
 <section class="products">
     <div class="products-lists" v-for="n in productsLists">
         <div>
@@ -43,6 +43,7 @@
             data: {
                 bgImg:'../img/fiber/multi_square_molded.jpg',
                 origin:window.origin,
+                productName:'',
                 productsLists:[{
                 }]
             },
@@ -63,6 +64,7 @@
                 },
             },
             ready(){
+                this.productName=GetQueryString('name');
                 this.getlist();
             }
         })

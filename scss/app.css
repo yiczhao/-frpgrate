@@ -1283,6 +1283,8 @@ body.main {
   body.main header .header-nav ul li {
     width: 105px;
     font-size: 0.8rem; }
+  body.main header .children-nav {
+    display: none; }
   body.main .content .banner {
     height: 200px; } }
 @media screen and (max-width: 1000px) {

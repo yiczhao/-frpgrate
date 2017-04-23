@@ -4,7 +4,7 @@ define(['vue'], function(Vue) {
     //定义组件 模板 数据 方法
     var header = Vue.extend({
         template: `
-        <a class="header-logo" href="../index.html"></a>
+        <a class="header-logo" href="http://47.93.51.158/frpgrate/index.html"></a>
         <nav class="header-nav">
         <span class="daohang" @click="showNav=!showNav">导航</span>
         <ul :class="{'show-nav':showNav}">
@@ -56,6 +56,9 @@ define(['vue'], function(Vue) {
                 })
             },
             showChild(id){
+                if($('.children-nav').width()<1200){
+                    return;
+                }
                 this.navId=id;
                 this.$nextTick(function(){
                     if(!$.trim($('.children-nav').html())){
