@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="../scss/app.css">
+    <link rel="stylesheet" href="../scss/views/products-list.css">
+</head>
+<body id="app" class="main">
+<header id="header">
+    <f-header></f-header>
+</header>
+<section class="content">
+    <div class="banner" :style="'background-image: url('+bgImg+')'"></div>
+</section>
+<section class="titles">XX产品</section>
+<section class="products">
+    <div class="products-lists" v-for="n in productsLists">
+        <div>
+            <img :src="origin+n.image_url" alt="">
+            <div>
+                <span>{{n.title}}</span>
+                <span>{{{n.content}}}</span>
+                <a class="top-tilte" :href="n.jump_url">详情</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="footer" class="about">
+    <f-footer></f-footer>
+</section>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/require.js" data-main="../config.js"></script>
+<script src="../js/index.js"></script>
+<script>
+    function initHtml(Vue){
+        new Vue({
+            el: '#app',
+            data: {
+                bgImg:'../img/fiber/multi_square_molded.jpg',
+                origin:window.origin,
+                productsLists:[{
+                }]
+            },
+            methods:{
+                getlist(){
+                    var vm=this;
+                    var _id=GetQueryString('id');
+                    $.ajax({
+                        type:'get',
+                        data:this.searchData,
+                        url:origin+'api/action/pageArticle?version=1.0.1&pageNo=1&pageSize=10&folderId='+_id,
+                        success:function(res){
+                            if(res.code===0){
+                                vm.$set('productsLists',res.data.list);
+                                console.log(res.data.list)
+                            }
+                        }
+                    })
+                },
+            },
+            ready(){
+                this.getlist();
+            }
+        })
+    }
+</script>
+</html>

@@ -26,7 +26,7 @@ define(['vue'], function(Vue) {
         ready(){
             var vm=this;
             var searchData={
-                siteId:9,
+                siteId:3,
                 version:'1.0.1',
                 pageNo:1,
                 pageSize:10,

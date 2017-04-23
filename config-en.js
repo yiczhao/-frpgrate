@@ -2,7 +2,6 @@ window.baseUrl='http://localhost:63342/frpgrate/';
 window.origin='http://47.93.51.158/jfinal_cms/';
 require.config({
     baseUrl:baseUrl,
-    // baseUrl:'http://47.93.51.158/frpgrate/',
     shim:{
         'vue':{
             exports:'vue'
@@ -10,8 +9,8 @@ require.config({
     },
     paths:{
         'vue':'lib/vue',
-        'header':'vue-module/f-header',
-        'footer':'vue-module/f-footer'
+        'header':'vue-module/f-header-en',
+        'footer':'vue-module/f-footer-en'
     },
 });
 require(['vue','header','footer'],function(Vue,header,footer){

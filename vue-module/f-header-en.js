@@ -19,8 +19,8 @@ define(['vue'], function(Vue) {
         <a v-else v-text="i.name"></a>
         </li>
         <li>
-        <a :href="baseUrl+'index.html'">中文</a>
-        <a :href="baseUrl+'index-en.html'" class="no-active">En</a>
+        <a :href="baseUrl+'index.html'" class="no-active">中文</a>
+        <a :href="baseUrl+'index-en.html'">En</a>
         </li>
         </ul>
         <div class="children-nav" v-on:mouseleave="hideNav" v-show="!!navId">
@@ -39,7 +39,7 @@ define(['vue'], function(Vue) {
             getlist(){
                 var vm=this;
                 var searchData={
-                    siteId:9,
+                    siteId:3,
                     version:'1.0.0',
                     method:'folders'
                 };

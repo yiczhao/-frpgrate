@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="../scss/app.css">
+    <link rel="stylesheet" href="../scss/views/gratings.css">
+</head>
+<body id="app" class="main">
+<header id="header">
+    <f-header></f-header>
+</header>
+<section class="titles">FIBERGRATE® MOLDED GRATINGS</section>
+<section class="gratings-nav">
+    <div class="nav-btn">
+        <span @click="step=1" :class="{'active':step===1}">General</span>
+        <span @click="step=2" :class="{'active':step===2}">Product Data</span>
+        <span @click="step=3" :class="{'active':step===3}">Martets</span>
+        <span @click="step=4" :class="{'active':step===4}">Case Studies</span>
+    </div>
+    <div class="nav-lists">
+        <div class="nav-banner">
+            <span class="banner-left"></span>
+            <span class="banner-right"></span>
+            <ul>
+               <li>
+                   <span class="cur"></span>
+                   <span class="cur"></span>
+               </li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="../img/fiber/frp-red-square-mesh-molded-grating.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="lists1" v-show="step===1">General</div>
+        <div class="lists2" v-show="step===2">Product Data</div>
+        <div class="lists3" v-show="step===3">Martets</div>
+        <div class="lists4" v-show="step===4">Case Studies</div>
+    </div>
+</section>
+<section id="footer" class="about">
+    <f-footer></f-footer>
+</section>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/require.js" data-main="../config.js"></script>
+<script src="../js/index.js"></script>
+<script>
+    function initHtml(Vue){
+        new Vue({
+            el: '#app',
+            data: {
+                step:1,
+                showNav:false,
+                bgImg:'../img/fiber/multi_square_molded.jpg',
+                menus:[
+                    {name:'产品',link:'../products/products.html'},
+                    {name:'应用领域',link:'../markets/markets.html'},
+                    {name:'技术资料',link:'#',dataClass:''},
+                    {name:'联系我们',link:'#',dataClass:'about'},
+                ],
+                productsLists:[{
+                    imgSrc:'../img/fiber/molded-grating-mix.gif',
+                    proName:'产品名称',
+                    proDes:'产品产品说明产品说明产产品说明产产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明说明产品说明产产品说明产产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明',
+                    proUri:'#'
+                },{
+                    imgSrc:'../img/fiber/molded-grating-mix.gif',
+                    proName:'产品名称',
+                    proDes:'产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明',
+                    proUri:'#'
+                },{
+                    imgSrc:'../img/fiber/molded-grating-mix.gif',
+                    proName:'产品名称',
+                    proDes:'产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明',
+                    proUri:'#'
+                }]
+            }
+        })
+    }
+</script>
+</html>
