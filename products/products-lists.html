@@ -24,7 +24,7 @@
             <div>
                 <span>{{n.title}}</span>
                 <span>{{{n.content}}}</span>
-                <a class="top-tilte" :href="n.jump_url">详情</a>
+                <a class="top-tilte" :href="n.jump_url+'?id='+n.id">详情</a>
             </div>
         </div>
     </div>
@@ -57,7 +57,6 @@
                         success:function(res){
                             if(res.code===0){
                                 vm.$set('productsLists',res.data.list);
-                                console.log(res.data.list)
                             }
                         }
                     })

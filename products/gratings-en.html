@@ -16,10 +16,10 @@
 <section class="titles">FIBERGRATE® MOLDED GRATINGS</section>
 <section class="gratings-nav">
     <div class="nav-btn">
-        <span @click="step=1" :class="{'active':step===1}">General</span>
-        <span @click="step=2" :class="{'active':step===2}">Product Data</span>
-        <span @click="step=3" :class="{'active':step===3}">Martets</span>
-        <span @click="step=4" :class="{'active':step===4}">Case Studies</span>
+        <span @click="step=1" :class="{'active':step===1}">产品详情</span>
+        <span @click="step=2" :class="{'active':step===2}">PDF下载</span>
+        <span v-if="!!productsLists.file_url1" @click="step=3" :class="{'active':step===3}">Martets</span>
+        <span v-if="!!productsLists.file_url2" @click="step=4" :class="{'active':step===4}">Case Studies</span>
     </div>
     <div class="nav-lists">
         <div class="nav-banner">
@@ -27,20 +27,19 @@
             <span class="banner-right"></span>
             <ul>
                <li>
-                   <span class="cur"></span>
-                   <span class="cur"></span>
+                   <!-- <span class="cur"></span> -->
                </li>
             </ul>
             <ul>
                 <li>
-                    <img src="../img/fiber/frp-red-square-mesh-molded-grating.jpg" alt="">
+                    <img :src="origin+productsLists.image_url" alt="">
                 </li>
             </ul>
         </div>
-        <div class="lists1" v-show="step===1">General</div>
-        <div class="lists2" v-show="step===2">Product Data</div>
-        <div class="lists3" v-show="step===3">Martets</div>
-        <div class="lists4" v-show="step===4">Case Studies</div>
+        <div class="lists1" v-show="step===1">{{{productsLists.content}}}</div>
+        <div class="lists2" v-show="step===2"><a :href="origin+productsLists.file_url">{{productsLists.file_name}}</a></div>
+        <div class="lists3" v-show="step===3">{{productsLists.content}}</div>
+        <div class="lists4" v-show="step===4">{{productsLists.content}}</div>
     </div>
 </section>
 <section id="footer" class="about">
@@ -48,7 +47,7 @@
 </section>
 </body>
 <script src="../js/jquery.min.js"></script>
-<script src="../js/require.js" data-main="../config.js"></script>
+<script src="../js/require.js" data-main="../config-en.js"></script>
 <script src="../js/index.js"></script>
 <script>
     function initHtml(Vue){
@@ -56,30 +55,28 @@
             el: '#app',
             data: {
                 step:1,
-                showNav:false,
-                bgImg:'../img/fiber/multi_square_molded.jpg',
-                menus:[
-                    {name:'产品',link:'../products/products.html'},
-                    {name:'应用领域',link:'../markets/markets.html'},
-                    {name:'技术资料',link:'#',dataClass:''},
-                    {name:'联系我们',link:'#',dataClass:'about'},
-                ],
-                productsLists:[{
-                    imgSrc:'../img/fiber/molded-grating-mix.gif',
-                    proName:'产品名称',
-                    proDes:'产品产品说明产品说明产产品说明产产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明说明产品说明产产品说明产产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明',
-                    proUri:'#'
-                },{
-                    imgSrc:'../img/fiber/molded-grating-mix.gif',
-                    proName:'产品名称',
-                    proDes:'产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明',
-                    proUri:'#'
-                },{
-                    imgSrc:'../img/fiber/molded-grating-mix.gif',
-                    proName:'产品名称',
-                    proDes:'产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明产品说明',
-                    proUri:'#'
-                }]
+                origin:window.origin,
+                productsLists:{}
+            },
+            methods:{
+                getlist(){
+                    var vm=this;
+                    var _id=GetQueryString('id');
+                    $.ajax({
+                        type:'get',
+                        data:this.searchData,
+                        url:origin+'api/action/article?version=1.0.1&pageNo=1&pageSize=10&articleId='+_id,
+                        success:function(res){
+                            if(res.code===0){
+                                vm.$set('productsLists',res.data.article);
+                                console.log(res.data.article)
+                            }
+                        }
+                    })
+                },
+            },
+            ready(){
+                this.getlist();
             }
         })
     }

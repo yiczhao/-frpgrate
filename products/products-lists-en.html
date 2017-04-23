@@ -24,7 +24,7 @@
             <div>
                 <span>{{n.title}}</span>
                 <span>{{{n.content}}}</span>
-                <a class="top-tilte" :href="n.jump_url">详情</a>
+                <a class="top-tilte" :href="n.jump_url+'?id='+n.id">详情</a>
             </div>
         </div>
     </div>
@@ -34,7 +34,7 @@
 </section>
 </body>
 <script src="../js/jquery.min.js"></script>
-<script src="../js/require.js" data-main="../config.js"></script>
+<script src="../js/require.js" data-main="../config-en.js"></script>
 <script src="../js/index.js"></script>
 <script>
     function initHtml(Vue){
