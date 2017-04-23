@@ -1082,6 +1082,8 @@ body {
 
 body.main {
   font-size: 13px; }
+  body.main section.products {
+    margin-bottom: 40px; }
   body.main a {
     color: #14355c; }
   body.main header {
