@@ -24,7 +24,7 @@ body.main{
           }
           span:first-child{
             padding: 20px 0;
-            color: #00a2d7;font-weight: bolder;font-size: 1.5rem;
+            color: #00a2d7;font-weight: bolder;font-size: 1.5rem;text-overflow: ellipsis;  white-space: nowrap;  overflow: hidden;  display: block;
           }
           span:nth-child(2){
             height: 107px;
