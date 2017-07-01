@@ -58,7 +58,7 @@
                         success:function(res){
                             if(res.code===0){
                                 vm.$set('productsLists',res.data.list);
-                                console.log(res.data.list)
+                                $('.products').show();
                             }
                         }
                     })

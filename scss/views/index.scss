@@ -2,6 +2,7 @@ body.main{
   font-size:$base-font-size;
   section.products{
     margin-bottom: 40px;
+    display: none;
   }
   a{
     color:#14355c;
@@ -63,11 +64,17 @@ body.main{
         left: 0;
         background: rgba(255, 255, 255, 0.87);
         a{
-          display: table-cell;
+          display: block;
           padding: 20px;
           text-align: center;
           vertical-align: middle;
           font-size: 20px;
+          float: left;
+          width: 20%;
+          box-sizing: border-box;
+          &:hover{
+            color:red;
+          }
         }
       }
     }
@@ -182,6 +189,19 @@ body.main{
       &>div{
         float:left;
         margin-right: 20px;
+      }
+      img{
+        width: 360px;
+        height: 270px;
+      }
+      .lists2{
+        a{
+          display: block;
+          margin-bottom: 10px;
+          &:hover{
+            color:#0098d7;
+          }
+        }
       }
     }
   }

@@ -35,6 +35,8 @@ body.main .products {
         color: #00a2d7;
         font-weight: bolder;
         font-size: 1.5rem; }
+      body.main .products .products-lists > div div span:nth-child(2) {
+        height: 107px; }
       body.main .products .products-lists > div div a {
         width: 120px;
         height: 28px;

@@ -24,7 +24,7 @@ define(['vue'], function(Vue) {
         </li>
         </ul>
         <div class="children-nav" v-on:mouseleave="hideNav" v-show="!!navId">
-        <a v-for="j in menus" v-if="j.parent_id===navId" v-if="!!j.parent_id" :href="j.jump_url+'?id='+j.id" v-text="j.name"></a>
+            <a v-for="j in menus" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;" v-if="j.parent_id===navId" v-if="!!j.parent_id" :href="j.jump_url+'?id='+j.id" v-text="j.name"></a>
         </div>
         </nav>`,
         data: function() {

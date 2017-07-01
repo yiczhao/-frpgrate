@@ -47,13 +47,13 @@
             el: '#app',
             data: {
                 origin:window.origin,
-                productsLists:[{
-                }]
+                productsLists:[]
             },
             methods:{
             },
             ready(){
                 this.$set('productsLists',JSON.parse(sessionStorage.getItem('menu')));
+                $('.products').show();
             }
         })
     }

@@ -1083,7 +1083,8 @@ body {
 body.main {
   font-size: 13px; }
   body.main section.products {
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    display: none; }
   body.main a {
     color: #14355c; }
   body.main header {
@@ -1146,11 +1147,16 @@ body.main {
         left: 0;
         background: rgba(255, 255, 255, 0.87); }
         body.main header .header-nav .children-nav a {
-          display: table-cell;
+          display: block;
           padding: 20px;
           text-align: center;
           vertical-align: middle;
-          font-size: 20px; }
+          font-size: 20px;
+          float: left;
+          width: 20%;
+          box-sizing: border-box; }
+          body.main header .header-nav .children-nav a:hover {
+            color: red; }
   body.main .floor .floor-main {
     position: relative;
     margin: 0 auto; }
@@ -1275,6 +1281,14 @@ body.main {
       body.main .gratings-nav .nav-lists > div {
         float: left;
         margin-right: 20px; }
+      body.main .gratings-nav .nav-lists img {
+        width: 360px;
+        height: 270px; }
+      body.main .gratings-nav .nav-lists .lists2 a {
+        display: block;
+        margin-bottom: 10px; }
+        body.main .gratings-nav .nav-lists .lists2 a:hover {
+          color: #0098d7; }
 
 @media screen and (max-width: 1500px) {
   body.main header .header-nav ul li {

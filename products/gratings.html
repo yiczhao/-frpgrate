@@ -21,7 +21,7 @@
         <span v-if="!!productsLists.file_url1" @click="step=3" :class="{'active':step===3}">Martets</span>
         <span v-if="!!productsLists.file_url2" @click="step=4" :class="{'active':step===4}">Case Studies</span>
     </div>
-    <div class="nav-lists">
+    <div class="nav-lists" v-show="!!productsLists.content">
         <div class="nav-banner">
             <span class="banner-left"></span>
             <span class="banner-right"></span>
@@ -37,7 +37,12 @@
             </ul>
         </div>
         <div class="lists1" v-show="step===1">{{{productsLists.content}}}</div>
-        <div class="lists2" v-show="step===2"><a :href="origin+productsLists.file_url">{{productsLists.file_name}}</a></div>
+        <div class="lists2" v-show="step===2">
+            <template v-for="(index,n) in productsLists.file_name">
+                <a :href="origin+productsLists.file_url[index]">{{n}}</a>
+            </template>
+            <!--<a :href="origin+productsLists.file_url">{{productsLists.file_name}}</a>-->
+        </div>
         <div class="lists3" v-show="step===3">{{productsLists.content}}</div>
         <div class="lists4" v-show="step===4">{{productsLists.content}}</div>
     </div>
@@ -69,7 +74,10 @@
                         success:function(res){
                             if(res.code===0){
                                 vm.$set('productsLists',res.data.article);
-                                console.log(res.data.article)
+                                vm.productsLists.file_name=vm.productsLists.file_name.split(';');
+                                vm.productsLists.file_url=vm.productsLists.file_url.split(';');
+                                vm.productsLists.file_name=vm.productsLists.file_name.slice(0,vm.productsLists.file_name.length-1);
+                                vm.productsLists.file_url=vm.productsLists.file_url.slice(0,vm.productsLists.file_url.length-1);
                             }
                         }
                     })

@@ -8,23 +8,23 @@ define(['vue'], function(Vue) {
         <nav class="header-nav">
         <span class="daohang" @click="showNav=!showNav">导航</span>
         <ul :class="{'show-nav':showNav}">
-        <li v-for="i in menus"
-        v-if="!i.parent_id"
-        :data-id="i.id"
-    :data-class="i.key"
-    :class="{'hover':navId===i.id}"
-    v-on:mouseenter="showChild(i.id)"
-        >
-        <a v-if="!!i.jump_url" :href="i.jump_url+'?id='+i.id+'&name='+i.name" v-text="i.name"></a>
-        <a v-else v-text="i.name"></a>
-        </li>
-        <li>
-        <a :href="baseUrl+'index.html'">中文</a>
-        <a :href="baseUrl+'index-en.html'" class="no-active">En</a>
-        </li>
+            <li v-for="i in menus"
+            v-if="!i.parent_id"
+            :data-id="i.id"
+        :data-class="i.key"
+        :class="{'hover':navId===i.id}"
+        v-on:mouseenter="showChild(i.id)"
+            >
+                <a v-if="!!i.jump_url" :href="i.jump_url+'?id='+i.id+'&name='+i.name" v-text="i.name"></a>
+                <a v-else v-text="i.name"></a>
+            </li>
+            <li>
+                <a :href="baseUrl+'index.html'">中文</a>
+                <a :href="baseUrl+'index-en.html'" class="no-active">En</a>
+            </li>
         </ul>
         <div class="children-nav" v-on:mouseleave="hideNav" v-show="!!navId">
-        <a v-for="j in menus" v-if="j.parent_id===navId" v-if="!!j.parent_id" :href="j.jump_url+'?id='+j.id" v-text="j.name"></a>
+            <a v-for="j in menus" v-if="j.parent_id===navId" v-if="!!j.parent_id" :href="j.jump_url+'?id='+j.id" v-text="j.name"></a>
         </div>
         </nav>`,
         data: function() {

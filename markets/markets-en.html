@@ -54,6 +54,7 @@
             },
             ready(){
                 this.$set('productsLists',JSON.parse(sessionStorage.getItem('menu')));
+                $('.products').show();
             }
         })
     }
