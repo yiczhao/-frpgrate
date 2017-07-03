@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="../scss/app.css">
+    <link rel="stylesheet" href="../scss/views/markets-list.css">
+</head>
+<body id="app" class="main">
+<header id="header">
+    <f-header></f-header>
+</header>
+<section class="titles">FIBERGRATE® MOLDED GRATINGS</section>
+<section class="gratings-nav">
+    <div class="nav-btn">
+        <span @click="step=1" :class="{'active':step===1}">案例详情</span>
+        <span @click="step=2" v-if="!!productsLists.file_url" :class="{'active':step===2}">PDF下载</span>
+        <span v-if="!!productsLists.file_url1" @click="step=3" :class="{'active':step===3}">Martets</span>
+        <span v-if="!!productsLists.file_url2" @click="step=4" :class="{'active':step===4}">Case Studies</span>
+    </div>
+    <div class="nav-lists"  v-show="!!productsLists.content">
+        <div class="nav-banner">
+            <span class="banner-left"></span>
+            <span class="banner-right"></span>
+            <ul>
+               <li>
+                   <!-- <span class="cur"></span> -->
+               </li>
+            </ul>
+            <ul>
+                <li>
+                    <img :src="productsLists.image_url" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="lists1" v-show="step===1">{{{productsLists.content}}}</div>
+        <div class="lists2" v-show="step===2">
+            <template v-for="(index,n) in productsLists.file_name">
+                <a :href="origin+productsLists.file_url[index]">{{n}}</a>
+            </template>
+        </div>
+        <div class="lists3" v-show="step===3">{{productsLists.content}}</div>
+        <div class="lists4" v-show="step===4">{{productsLists.content}}</div>
+    </div>
+</section>
+<section id="footer" class="about">
+    <f-footer></f-footer>
+</section>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/require.js" data-main="../config.js"></script>
+<script src="../js/index.js"></script>
+<script>
+    function initHtml(Vue){
+        new Vue({
+            el: '#app',
+            data: {
+                step:1,
+                origin:window.origin,
+                productsLists:{}
+            },
+            methods:{
+                getlist(){
+                    var vm=this;
+                    var _id=GetQueryString('id');
+                    $.ajax({
+                        type:'get',
+                        data:this.searchData,
+                        url:origin+'api/action/article?version=1.0.1&pageNo=1&pageSize=10&articleId='+_id,
+                        success:function(res){
+                            if(res.code===0){
+                                vm.$set('productsLists',res.data.article);
+                                vm.productsLists.file_name=vm.productsLists.file_name.split(';');
+                                vm.productsLists.file_url=vm.productsLists.file_url.split(';');
+                                vm.productsLists.file_name=vm.productsLists.file_name.slice(0,vm.productsLists.file_name.length-1);
+                                vm.productsLists.file_url=vm.productsLists.file_url.slice(0,vm.productsLists.file_url.length-1);
+                            }
+                        }
+                    })
+                },
+            },
+            ready(){
+                this.getlist();
+            }
+        })
+    }
+</script>
+</html>

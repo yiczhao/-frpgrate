@@ -15,11 +15,11 @@ body.main{
       display: table-cell;
     }
     .header-logo{
-      width: 20%;
+      width: 18%;
       line-height: 120px;text-align: center; background:url('../img/logo.jpg') no-repeat center center;
     }
     .header-nav{
-      width: 80%;
+      width: 82%;
       text-align: right;
       .daohang{
         display: none;
@@ -27,7 +27,7 @@ body.main{
       ul{
         li{
           position: relative;
-          display: inline-block;  width: 164px;  height: 120px;  line-height: 120px;  text-align: center;
+          display: inline-block;  width: 154px;  height: 120px;  line-height: 120px;  text-align: center;
           font-size: 1rem;  color: rgb(20, 53, 92);  box-sizing: border-box;font-weight: bolder;
           &:before{
             position: absolute;left: 0px;  top: 45px;
@@ -225,7 +225,7 @@ body.main{
     header{
       .header-nav{
         ul li{
-          width: 105px;
+          width: 104px;
           font-size: 0.8rem;
         }
       }
